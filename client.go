@@ -522,7 +522,7 @@ func (cl *Client) dialFirst(ctx context.Context, addr string) dialResult {
 						0,
 					)
 					if ctx.Err() != nil {
-						cte.Forget()
+						//cte.Forget()
 						resCh <- dialResult{}
 						return
 					}
